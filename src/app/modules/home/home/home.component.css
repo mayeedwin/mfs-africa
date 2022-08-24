@@ -1,0 +1,15 @@
+.app-home {
+  display: flex;
+  height: 100vh;
+  overflow: auto;
+}
+
+.app-home-left {
+  max-width: 300px;
+  width: 100%;
+}
+
+.app-home-right {
+  flex: 1;
+  background: var(--bg-color-primary);
+}

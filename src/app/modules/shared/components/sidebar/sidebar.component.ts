@@ -22,7 +22,7 @@ export class SidebarComponent implements OnInit {
     },
     {
       name: 'Profile',
-      icon: 'profile',
+      icon: 'user',
     },
     {
       name: 'Settings',

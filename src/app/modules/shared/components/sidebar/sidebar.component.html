@@ -7,9 +7,12 @@
   </div>
   <section class="app-sidebar-content">
     <div class="app-sidebar-item" *ngFor="let i of navlist">
-      <mat-icon aria-hidden="false" aria-label="Example home icon">
-        {{ i.icon }}
-      </mat-icon>
+      <img
+        class="app-sidebar-item-icon"
+        src="assets/images/icons/{{ i.icon }}.svg"
+        alt="BY"
+        loading="lazy"
+      />
       <span>{{ i.name }}</span>
     </div>
   </section>

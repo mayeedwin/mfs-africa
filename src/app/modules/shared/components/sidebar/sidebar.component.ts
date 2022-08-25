@@ -11,7 +11,7 @@ export class SidebarComponent implements OnInit {
     {
       name: 'Home',
       icon: 'home',
-      path: '/',
+      path: '/home',
     },
     {
       name: 'Transfer',

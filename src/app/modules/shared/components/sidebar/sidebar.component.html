@@ -1,24 +1,54 @@
-<section class="app-sidebar">
-  <div class="app-sidebar-header">
-    <div class="app-sidebar-logo">
+<section class="sidebar">
+  <div class="sidebar-header">
+    <div class="sidebar-logo">
       <img src="assets/images/horizontal-logo.svg" alt="BY" loading="lazy" />
     </div>
-    <div class="app-sidebar-top-blurb">Your Account</div>
+    <div class="sidebar-top-blurb">Your Account</div>
   </div>
-  <section class="app-sidebar-content">
+  <section class="sidebar-content">
     <div
-      class="app-sidebar-item"
+      class="sidebar-item"
       *ngFor="let i of navlist"
       routerLink="{{ i.path }}"
       [routerLinkActive]="['sidebar-item-is-active']"
     >
       <img
-        class="app-sidebar-item-icon"
+        class="sidebar-item-icon"
         src="assets/images/icons/{{ i.icon }}.svg"
         alt="BY"
         loading="lazy"
       />
       <span>{{ i.name }}</span>
     </div>
+    <div style="padding: 0 20px; padding-top: 15px" class="sidebar-top-blurb">
+      Support
+    </div>
+    <div
+      class="sidebar-item"
+      *ngFor="
+        let i of [
+          {
+            name: 'FAQ',
+            path: 'faq'
+          },
+          {
+            name: 'Help',
+            path: 'help'
+          }
+        ]
+      "
+    >
+      <img
+        class="sidebar-item-icon"
+        src="assets/images/icons/help.svg"
+        alt="BY"
+        loading="lazy"
+      />
+      <span>{{ i.name }}</span>
+    </div>
   </section>
+    <div class="sidebar-account">
+      <div class="sidebar-account-circle">KJ</div>
+      <span>Kizito John</span>
+    </div>
 </section>

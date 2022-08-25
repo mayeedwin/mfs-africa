@@ -6,7 +6,12 @@
     <div class="app-sidebar-top-blurb">Your Account</div>
   </div>
   <section class="app-sidebar-content">
-    <div class="app-sidebar-item" *ngFor="let i of navlist">
+    <div
+      class="app-sidebar-item"
+      *ngFor="let i of navlist"
+      routerLink="{{ i.path }}"
+      [routerLinkActive]="['sidebar-item-is-active']"
+    >
       <img
         class="app-sidebar-item-icon"
         src="assets/images/icons/{{ i.icon }}.svg"

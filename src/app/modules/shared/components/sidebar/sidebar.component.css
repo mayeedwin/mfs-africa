@@ -83,3 +83,10 @@
   height: 38px;
   width: 38px;
 }
+
+/* Media Queries */
+@media (max-width: 540px) {
+  :host {
+    display: none;
+  }
+}

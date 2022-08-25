@@ -1,15 +1,23 @@
-.app-home {
+.home {
   display: flex;
   height: 100vh;
   overflow: auto;
 }
 
-.app-home-left {
+.home-left {
   max-width: 300px;
   width: 100%;
 }
 
-.app-home-right {
+.home-right {
   flex: 1;
   background: var(--bg-color-primary);
+  padding: 50px;
+  padding-top: 75px;
+}
+
+.home-header-title {
+  font-weight: 600;
+  font-size: 28px;
+  color: #000000;
 }

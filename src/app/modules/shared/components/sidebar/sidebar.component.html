@@ -6,38 +6,11 @@
     <div class="app-sidebar-top-blurb">Your Account</div>
   </div>
   <section class="app-sidebar-content">
-    <div
-      class="app-sidebar-item"
-      *ngFor="
-        let i of [
-          {
-            name: 'Home',
-            icon: 'home'
-          },
-          {
-            name: 'Transfer',
-            icon: 'transfer'
-          },
-          {
-            name: 'History',
-            icon: 'history'
-          },
-          {
-            name: 'Profile',
-            icon: 'profile'
-          },
-          {
-            name: 'Settings',
-            icon: 'settings'
-          },
-          {
-            name: 'Billing',
-            icon: 'billing'
-          }
-        ]
-      "
-    >
-      {{ i.name }}
+    <div class="app-sidebar-item" *ngFor="let i of navlist">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">
+        {{ i.icon }}
+      </mat-icon>
+      <span>{{ i.name }}</span>
     </div>
   </section>
 </section>

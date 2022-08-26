@@ -1,0 +1,58 @@
+.transactions {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.transactions-title {
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.transactions-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  color: #454545;
+  margin: 15px auto;
+}
+
+.transactions-table td {
+  border: 0;
+  border-bottom: 0.5px solid #d9d9d8;
+  padding: 10px 15px;
+}
+
+.transaction-status,
+.transaction-type {
+  text-transform: capitalize;
+}
+
+.transaction-amount {
+  color: #000000;
+  font-weight: 600;
+}
+
+.transaction-icon {
+  border: 2.4px dashed #caecff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #caecff;
+  border-radius: 50%;
+  padding: 10px;
+  height: 15px;
+  width: 15px;
+}
+
+.transaction-icon-failed {
+  background-color: #ffffff;
+  border: 2.4px dashed #caecff;
+}
+
+.transaction-icon-pending {
+  background-color: #ffffff;
+  border: 2.4px solid #caecff;
+}

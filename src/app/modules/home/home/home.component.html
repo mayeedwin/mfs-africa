@@ -86,16 +86,13 @@
           </div>
         </div>
         <div class="home-info-card">
-          <canvas
-            ngChartjs
-            [datasets]="lineChartData"
-            [labels]="lineChartLabels"
-            [options]="lineChartOptions"
-            [legend]="lineChartLegend"
-            [chartType]="lineChartType"
-            [inlinePlugins]="inlinePlugin"
+          <div
+            style="text-align: right; color: #4d4d4b"
+            class="home-info-card-blurb"
           >
-          </canvas>
+            Last 7 days
+          </div>
+          <div class="home-info-card-chart"></div>
         </div>
       </section>
       <div class="home-info-card">

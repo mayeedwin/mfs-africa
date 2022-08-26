@@ -247,6 +247,13 @@
     display: none;
   }
 
+  .home-info-card-chart {
+    background: #caecff;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 197.5px;
+  }
+
   .home-info-cards-mobile {
     display: flex;
   }

@@ -1,0 +1,41 @@
+:host {
+  display: none;
+}
+
+.header,
+.header-right,
+.header-user-box {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  background: #00456b;
+  height: 56px;
+  padding: 0 20px;
+  padding-left: 10px;
+}
+
+.header-right {
+  flex: 1;
+  justify-content: right;
+  gap: 15px;
+}
+
+.header-user-box {
+  color: #ffffff;
+  background: #0077ba;
+  border: 1px solid #0077ba;
+  border-radius: 50%;
+  justify-content: center;
+  font-weight: 500;
+  height: 32px;
+  width: 32px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  :host {
+    display: block;
+  }
+}

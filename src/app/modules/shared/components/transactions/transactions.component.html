@@ -1,6 +1,6 @@
 <section class="transactions">
   <div class="transactions-title">Recent transactions</div>
-  <section>
+  <section class="transactions-container">
     <table class="transactions-table">
       <tbody class="transactions-list">
         <tr class="transaction" *ngFor="let item of data">
@@ -26,7 +26,12 @@
               />
             </div>
           </td>
-          <td class="transaction-name">{{ item.name }}</td>
+          <td class="transaction-name">
+            <div>{{ item.name }}</div>
+            <div class="transaction-name-amount">
+              {{ item.currency + " " + item.amount.toFixed(2) }}
+            </div>
+          </td>
           <td class="transaction-amount">
             {{ item.currency + " " + item.amount.toFixed(2) }}
           </td>

@@ -12,3 +12,13 @@ html {
   background: var(--bg-color-primary);
   font-family: "Roboto", sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+/** Hide scrollbar */
+
+::-webkit-scrollbar {
+  width: 0px;
+}

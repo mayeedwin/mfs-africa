@@ -22,14 +22,19 @@
   color: #000000;
 }
 
-.home-info-cards {
+.home-info-cards,
+.home-info-card-balance-view {
   display: flex;
   align-items: center;
 }
 
+.home-info-card-balance-view {
+  justify-content: right;
+}
+
 .home-info-cards {
   background: var(--bg-color-primary);
-  gap: 75px;
+  gap: 50px;
   margin: 20px auto;
 }
 
@@ -38,7 +43,7 @@
   border-radius: 10px;
   padding: 10px;
   flex: 1;
-  min-height: 210px;
+  min-height: 239px;
   width: 100%;
 }
 
@@ -57,7 +62,7 @@
 
 .home-info-card-balance-value {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 35px;
   color: #ffffff;
   margin: 15px 0;
 }
@@ -70,12 +75,12 @@
 }
 
 .home-info-card-spent {
-  margin: 30px 0;
+  margin: 15px 0;
   margin-bottom: 0;
 }
 
 .home-info-card-spent .home-info-card-balance-value {
-  font-size: 28px;
+  font-size: 25px;
   margin: 5px 0;
 }
 
@@ -119,16 +124,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60px;
-  width: 80px;
-}
-
-.home-info-card-action-box-icon {
-  width: 24px;
+  height: 50px;
+  width: 70px;
 }
 
 .home-info-card-action-name {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   text-align: center;
 }
@@ -151,4 +152,118 @@
 
 .home-floating-btn img {
   width: 100%;
+}
+
+.home-info-cards-mobile {
+  display: none;
+  margin-top: 0;
+}
+
+.home-info-card-blurb {
+  font-size: 12px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.home-info-slider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: auto;
+  flex-wrap: nowrap;
+  max-width: 400px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.home-info-slider .home-info-card {
+  flex: 1;
+  min-width: 335px;
+  padding: 0;
+  width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .home-right {
+    padding: 20px 0;
+  }
+
+  .home-info-card-actions {
+    padding: 10px 20px;
+  }
+
+  .home-header-title {
+    display: none;
+  }
+
+  .home-info-cards {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home-info-card {
+    min-height: auto;
+    background-color: transparent;
+  }
+
+  .home-info-card-actions-list {
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .home-info-card-action {
+    align-items: center;
+  }
+
+  .home-info-card-action-box {
+    height: 40px;
+    width: 56px;
+  }
+
+  .home-info-card-action-name,
+  .home-info-card-actions-title {
+    font-size: 12px;
+  }
+
+  .home-info-card-balance-value {
+    font-size: 20px;
+  }
+
+  .home-info-card-spent .home-info-card-balance-value {
+    font-size: 18px;
+  }
+
+  .home-info-card-spent .home-info-card-balance-currency {
+    font-size: 10px;
+    margin-left: 8px;
+  }
+
+  .home-info-cards {
+    display: none;
+  }
+
+  .home-info-cards-mobile {
+    display: flex;
+  }
+
+  .home-info-card-spent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .home-info-card-balance-currency {
+    font-size: 13px;
+    margin-left: 8px;
+  }
+
+  .home-info-card-action-box img {
+    object-fit: scale-down;
+    padding: 5px;
+  }
 }

@@ -1,4 +1,5 @@
 <section class="home">
+  <app-header></app-header>
   <section class="home-left">
     <app-sidebar></app-sidebar>
   </section>
@@ -11,6 +12,9 @@
           <div class="home-info-card-balance-value">
             <span>9,485,760</span>
             <span class="home-info-card-balance-currency">UGX</span>
+          </div>
+          <div class="home-info-card-balance-view">
+            <img src="assets/images/icons/closed-eye-lg.svg" alt="BY" />
           </div>
           <div class="home-info-card-spent">
             <div class="home-info-card-balance-title">Spent this week</div>
@@ -31,6 +35,104 @@
                   <img
                     class="home-info-card-action-box-icon"
                     src="assets/images/icons/actions/{{ action.icon }}.svg"
+                    alt="BY"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="home-info-card-action-name">
+                  {{ action.name }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-info-cards home-info-cards-mobile">
+      <section class="home-info-slider">
+        <div class="home-info-card">
+          <div class="home-info-card-blurb">Today</div>
+          <div class="home-info-card-balance">
+            <div class="home-info-card-balance-title">Balance</div>
+            <div class="home-info-card-balance-value">
+              <span>9,485,760</span>
+              <span class="home-info-card-balance-currency">UGX</span>
+            </div>
+            <div class="home-info-card-balance-view">
+              <img src="assets/images/icons/closed-eye.svg" alt="BY" />
+            </div>
+            <div class="home-info-card-spent">
+              <div
+                *ngFor="
+                  let item of [
+                    {
+                      title: 'Incoming',
+                      value: '384,500'
+                    },
+                    {
+                      title: 'Outgoing',
+                      value: '82,700'
+                    }
+                  ]
+                "
+              >
+                <div class="home-info-card-balance-title">{{ item.title }}</div>
+                <div class="home-info-card-balance-value">
+                  <span>{{ item.value }}</span>
+                  <span class="home-info-card-balance-currency">UGX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-info-card">
+          <div class="home-info-card-blurb">Today</div>
+          <div class="home-info-card-balance">
+            <div class="home-info-card-balance-title">Balance</div>
+            <div class="home-info-card-balance-value">
+              <span>9,485,760</span>
+              <span class="home-info-card-balance-currency">UGX</span>
+            </div>
+            <div class="home-info-card-balance-view">
+              <img src="assets/images/icons/closed-eye.svg" alt="BY" />
+            </div>
+            <div class="home-info-card-spent">
+              <div
+                *ngFor="
+                  let item of [
+                    {
+                      title: 'Incoming',
+                      value: '384,500'
+                    },
+                    {
+                      title: 'Outgoing',
+                      value: '82,700'
+                    }
+                  ]
+                "
+              >
+                <div class="home-info-card-balance-title">{{ item.title }}</div>
+                <div class="home-info-card-balance-value">
+                  <span>{{ item.value }}</span>
+                  <span class="home-info-card-balance-currency">UGX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="home-info-card">
+        <div class="home-info-card-actions">
+          <div class="home-info-card-actions-title">Quick actions</div>
+          <div class="home-info-card-actions-list">
+            <div *ngFor="let action of actions">
+              <div class="home-info-card-action">
+                <div class="home-info-card-action-box">
+                  <img
+                    class="home-info-card-action-box-icon"
+                    src="assets/images/icons/actions/{{
+                      action.icon + '-mobile'
+                    }}.svg"
                     alt="BY"
                     loading="lazy"
                   />

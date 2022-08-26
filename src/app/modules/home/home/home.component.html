@@ -86,39 +86,16 @@
           </div>
         </div>
         <div class="home-info-card">
-          <div class="home-info-card-blurb">Today</div>
-          <div class="home-info-card-balance">
-            <div class="home-info-card-balance-title">Balance</div>
-            <div class="home-info-card-balance-value">
-              <span>9,485,760</span>
-              <span class="home-info-card-balance-currency">UGX</span>
-            </div>
-            <div class="home-info-card-balance-view">
-              <img src="assets/images/icons/closed-eye.svg" alt="BY" />
-            </div>
-            <div class="home-info-card-spent">
-              <div
-                *ngFor="
-                  let item of [
-                    {
-                      title: 'Incoming',
-                      value: '384,500'
-                    },
-                    {
-                      title: 'Outgoing',
-                      value: '82,700'
-                    }
-                  ]
-                "
-              >
-                <div class="home-info-card-balance-title">{{ item.title }}</div>
-                <div class="home-info-card-balance-value">
-                  <span>{{ item.value }}</span>
-                  <span class="home-info-card-balance-currency">UGX</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <canvas
+            ngChartjs
+            [datasets]="lineChartData"
+            [labels]="lineChartLabels"
+            [options]="lineChartOptions"
+            [legend]="lineChartLegend"
+            [chartType]="lineChartType"
+            [inlinePlugins]="inlinePlugin"
+          >
+          </canvas>
         </div>
       </section>
       <div class="home-info-card">

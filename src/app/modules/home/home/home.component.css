@@ -194,7 +194,7 @@
   }
 
   .home-info-card-actions {
-    padding: 10px 20px;
+    padding: 10px;
   }
 
   .home-header-title {
@@ -265,5 +265,10 @@
   .home-info-card-action-box img {
     object-fit: scale-down;
     padding: 5px;
+  }
+
+  .home-floating-btn {
+    bottom: 20px;
+    right: 20px;
   }
 }

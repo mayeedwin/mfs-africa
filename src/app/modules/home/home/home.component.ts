@@ -25,6 +25,7 @@ export class HomeComponent implements OnInit {
       icon: 'withdraw',
     },
   ];
+
   constructor() {}
 
   ngOnInit(): void {}

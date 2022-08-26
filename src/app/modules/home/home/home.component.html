@@ -4,5 +4,49 @@
   </section>
   <section class="home-right">
     <div class="home-header-title">Hi John,</div>
+    <section class="home-info-cards">
+      <div class="home-info-card">
+        <div class="home-info-card-balance">
+          <div class="home-info-card-balance-title">Balance</div>
+          <div class="home-info-card-balance-value">
+            <span>9,485,760</span>
+            <span class="home-info-card-balance-currency">UGX</span>
+          </div>
+          <div class="home-info-card-spent">
+            <div class="home-info-card-balance-title">Spent this week</div>
+            <div class="home-info-card-balance-value">
+              <span>9,485,760</span>
+              <span class="home-info-card-balance-currency">UGX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-info-card">
+        <div class="home-info-card-actions">
+          <div class="home-info-card-actions-title">Quick actions</div>
+          <div class="home-info-card-actions-list">
+            <div *ngFor="let action of actions">
+              <div class="home-info-card-action">
+                <div class="home-info-card-action-box">
+                  <img
+                    class="home-info-card-action-box-icon"
+                    src="assets/images/icons/actions/{{ action.icon }}.svg"
+                    alt="BY"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="home-info-card-action-name">
+                  {{ action.name }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <app-transactions></app-transactions>
   </section>
+  <div class="home-floating-btn">
+    <img src=" assets/images/circular-logo.svg" alt="BY" loading="lazy" />
+  </div>
 </section>

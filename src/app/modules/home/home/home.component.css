@@ -13,7 +13,8 @@
   flex: 1;
   background: var(--bg-color-primary);
   padding: 50px;
-  padding-top: 75px;
+  padding-top: 60px;
+  overflow: auto;
 }
 
 .home-header-title {

@@ -44,11 +44,7 @@
   color: #2f2f2e;
   padding: 15px 20px;
   border-bottom: 0.5px solid var(--border-color);
-}
-
-.sidebar-item:hover {
-  background-color: var(--bg-color-primary);
-  color: #0077ba;
+  border-left: 5px solid transparent;
 }
 
 .sidebar-item-icon {
@@ -56,8 +52,11 @@
   width: 24px;
 }
 
-.sidebar-item-is-active {
+.sidebar-item-is-active,
+.sidebar-item:hover {
+  background: var(--bg-color-primary);
   color: #0077ba;
+  border-left: 5px solid #0077ba;
 }
 
 .sidebar-account {

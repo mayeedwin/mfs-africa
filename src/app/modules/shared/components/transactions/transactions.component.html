@@ -1,7 +1,7 @@
 <section class="transactions">
   <div class="transactions-title">Recent transactions</div>
   <section class="transactions-container">
-    <table *ngIf="data.length > 100; else noData" class="transactions-table">
+    <table *ngIf="data.length > 0; else noData" class="transactions-table">
       <tbody class="transactions-list">
         <tr class="transaction" *ngFor="let item of data">
           <td>

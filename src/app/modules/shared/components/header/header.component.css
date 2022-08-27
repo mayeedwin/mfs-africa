@@ -23,7 +23,7 @@
 }
 
 .header-user-box {
-  color: #ffffff;
+  color: var(--bg-shade-1);
   background: #0077ba;
   border: 1px solid #0077ba;
   border-radius: 50%;

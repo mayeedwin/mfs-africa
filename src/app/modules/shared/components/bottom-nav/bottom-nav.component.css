@@ -5,7 +5,7 @@
   display: none;
   position: fixed;
   bottom: 0;
-  background: #ffffff;
+  background: var(--bg-shade-1);
   box-shadow: 0px -4px 10px 5px rgba(230, 228, 228, 0.25);
   border-radius: 10px 10px 0px 0px;
   width: 100%;

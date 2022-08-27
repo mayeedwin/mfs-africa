@@ -27,7 +27,7 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.08em;
-  color: #000000;
+  color: var(--bg-shade-2);
 }
 
 .sidebar-inner {
@@ -78,7 +78,7 @@
   justify-content: center;
   background: #00456b;
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--bg-shade-1);
   height: 38px;
   width: 38px;
 }

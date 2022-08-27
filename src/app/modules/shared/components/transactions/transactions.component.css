@@ -1,11 +1,11 @@
 .transactions {
-  background: #ffffff;
+  background: var(--bg-shade-1);
   border-radius: 10px;
   padding: 20px;
 }
 
 .transactions-title {
-  color: #000000;
+  color: var(--bg-shade-2);
   font-weight: 400;
   font-size: 16px;
 }
@@ -57,7 +57,7 @@
 }
 
 .transaction-amount {
-  color: #000000;
+  color: var(--bg-shade-2);
   font-weight: 600;
 }
 
@@ -74,12 +74,12 @@
 }
 
 .transaction-icon-failed {
-  background-color: #ffffff;
+  background-color: var(--bg-shade-1);
   border: 2.4px dashed #caecff;
 }
 
 .transaction-icon-pending {
-  background-color: #ffffff;
+  background-color: var(--bg-shade-1);
   border: 2.4px solid #caecff;
 }
 
@@ -99,7 +99,7 @@
   }
 
   .transaction-name-amount {
-    color: #000000;
+    color: var(--bg-shade-2);
     display: block;
     line-height: 1.5;
     margin-top: 5px;

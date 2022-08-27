@@ -20,7 +20,7 @@
 .home-header-title {
   font-weight: 600;
   font-size: 28px;
-  color: #000000;
+  color: var(--bg-shade-2);
 }
 
 .home-info-cards,
@@ -40,7 +40,7 @@
 }
 
 .home-info-card {
-  background: #ffffff;
+  background: var(--bg-shade-1);
   border-radius: 10px;
   padding: 10px;
   flex: 1;
@@ -55,7 +55,7 @@
 }
 
 .home-info-card-balance-title {
-  color: #ffffff;
+  color: var(--bg-shade-1);
   font-weight: 400;
   font-size: 13px;
   line-height: 19px;
@@ -64,7 +64,7 @@
 .home-info-card-balance-value {
   font-weight: 600;
   font-size: 35px;
-  color: #ffffff;
+  color: var(--bg-shade-1);
   margin: 15px 0;
 }
 
@@ -94,7 +94,7 @@
 }
 
 .home-info-card-actions-title {
-  color: #000000;
+  color: var(--bg-shade-2);
   font-weight: 400;
   font-size: 18px;
 }
@@ -144,7 +144,7 @@
   position: fixed;
   bottom: 50px;
   right: 50px;
-  background: #ffffff;
+  background: var(--bg-shade-1);
   border-radius: 50%;
   height: 45px;
   width: 45px;
@@ -162,7 +162,7 @@
 
 .home-info-card-blurb {
   font-size: 12px;
-  color: #000000;
+  color: var(--bg-shade-2);
   margin-bottom: 10px;
 }
 

@@ -4,10 +4,21 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { RouterModule } from '@angular/router';
 import { TransactionsComponent } from './components/transactions/transactions.component';
+import { BottomNavComponent } from './components/bottom-nav/bottom-nav.component';
 
 @NgModule({
-  declarations: [SidebarComponent, HeaderComponent, TransactionsComponent],
+  declarations: [
+    SidebarComponent,
+    HeaderComponent,
+    TransactionsComponent,
+    BottomNavComponent,
+  ],
   imports: [CommonModule, RouterModule],
-  exports: [SidebarComponent, HeaderComponent, TransactionsComponent],
+  exports: [
+    BottomNavComponent,
+    SidebarComponent,
+    HeaderComponent,
+    TransactionsComponent,
+  ],
 })
 export class SharedModule {}

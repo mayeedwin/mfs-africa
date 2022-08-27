@@ -87,6 +87,39 @@
   display: none;
 }
 
+.no-transactions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 20px;
+  margin: 0 auto;
+}
+
+.no-transactions-title,
+.no-transactions-desc {
+  color: #2f2f2e;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.no-transactions-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.no-transactions-btn {
+  background: #006fab;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border: 0;
+  color: var(--bg-shade-1);
+  padding: 10px 20px;
+  min-width: 120px;
+  margin: 20px auto;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   .transactions {

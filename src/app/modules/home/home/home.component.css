@@ -184,6 +184,25 @@
   width: 100%;
 }
 
+.home-info-slider-dots {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0 auto;
+  gap: 10px;
+}
+
+.home-info-slider-dot {
+  border-radius: 50%;
+  background: #008f50;
+  height: 12px;
+  width: 12px;
+}
+
+.home-info-slider-dot-inactive {
+  background: #c4c4c4;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   .home {
@@ -274,5 +293,9 @@
   .home-floating-btn {
     bottom: 80px;
     right: 20px;
+  }
+
+  .home-info-slider-dots {
+    display: flex;
   }
 }

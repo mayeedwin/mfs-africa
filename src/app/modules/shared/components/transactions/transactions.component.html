@@ -1,7 +1,7 @@
 <section class="transactions">
   <div class="transactions-title">Recent transactions</div>
   <section class="transactions-container">
-    <table class="transactions-table">
+    <table *ngIf="data.length > 100; else noData" class="transactions-table">
       <tbody class="transactions-list">
         <tr class="transaction" *ngFor="let item of data">
           <td>
@@ -50,5 +50,15 @@
         </tr>
       </tbody>
     </table>
+    <ng-template #noData>
+      <section class="no-transactions">
+        <img src="assets/images/icons/no-transactions.svg" alt="BY" />
+        <div class="no-transactions-title">No transactions yet</div>
+        <div class="no-transactions-desc">
+          After your first transaction, you will be able to view it here
+        </div>
+        <button class="no-transactions-btn">Got It</button>
+      </section>
+    </ng-template>
   </section>
 </section>

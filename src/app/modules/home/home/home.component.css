@@ -192,6 +192,7 @@
 
   .home-right {
     padding: 20px 0;
+    padding-bottom: 75px;
   }
 
   .home-info-card-actions {
@@ -270,13 +271,8 @@
     margin-left: 8px;
   }
 
-  .home-info-card-action-box img {
-    object-fit: scale-down;
-    padding: 5px;
-  }
-
   .home-floating-btn {
-    bottom: 20px;
+    bottom: 80px;
     right: 20px;
   }
 }

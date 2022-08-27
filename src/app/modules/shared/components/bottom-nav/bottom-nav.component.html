@@ -1,1 +1,33 @@
-<p>bottom-nav works!</p>
+<div class="bottom-nav">
+  <div
+    *ngFor="
+      let i of [
+        {
+          name: 'Home',
+          icon: 'home-active'
+        },
+        {
+          name: 'Transfer',
+          icon: 'transfer'
+        },
+        {
+          name: 'History',
+          icon: 'history'
+        },
+        {
+          name: 'Profile',
+          icon: 'user'
+        }
+      ]
+    "
+    [routerLink]="'/' + i.name.toLowerCase()"
+    class="bottom-nav-item"
+  >
+    <img
+      [src]="'assets/images/icons/' + i.icon + '.svg'"
+      alt="BY"
+      loading="lazy"
+    />
+    <div class="bottom-nav-item-label">{{ i.name }}</div>
+  </div>
+</div>

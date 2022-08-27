@@ -27,6 +27,11 @@
   font-size: 12px;
 }
 
+.bottom-nav-item-active,
+.bottom-nav-item:hover {
+  color: #0077ba;
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .bottom-nav {
